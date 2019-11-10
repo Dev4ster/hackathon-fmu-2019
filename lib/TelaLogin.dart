@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
+import 'package:http/http.dart' as http;
 
 class TelaLogin extends StatelessWidget {
 
@@ -7,6 +7,7 @@ class TelaLogin extends StatelessWidget {
   String senha;
   String dialog;
   String teste;
+
 
   @override
   Widget build(BuildContext context){
@@ -53,14 +54,28 @@ class TelaLogin extends StatelessWidget {
       },
     );
     //Botão
+
   Container Logo =  new Container(
       child: Text(
         "AMIGUÍNEOS",
         
           style: TextStyle(
             color: Colors.white,
+            fontFamily: 'Rustico-Regular',
             fontWeight:FontWeight.w800 ,
-            fontSize: 30.0,
+            fontSize: 50.0,
+            shadows: <Shadow>[
+                            Shadow(
+                              offset: Offset(10.0, 10.0),
+                              blurRadius: 3.0,
+                              color: Colors.black,
+                            ),
+                            Shadow(
+                              offset: Offset(10.0, 10.0),
+                              blurRadius: 8.0,
+                              color: Colors.black,
+                            ),
+                          ],
          ),
       ),
   );
@@ -115,6 +130,7 @@ class TelaLogin extends StatelessWidget {
     );
 
     Scaffold scaffold = new Scaffold(
+      resizeToAvoidBottomPadding: false,
       appBar: appBar,
       body: container,
     );

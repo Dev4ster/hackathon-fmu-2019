@@ -1,5 +1,6 @@
 import 'package:amiguineos/HomePage.dart';
 import 'package:amiguineos/TelaLogin.dart';
+import 'package:amiguineos/TelaCadastro.dart';
 import 'package:flutter/material.dart';
 import 'package:amiguineos/PageInitial.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'CreamPeach',
+        fontFamily: 'Roboto-Regular',
         primarySwatch: Colors.purple,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
@@ -35,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
 
     return 
     Scaffold(
