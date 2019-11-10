@@ -27,9 +27,13 @@ class _HomePageState extends State<HomePage> {
           UserAccountsDrawerHeader(
             accountName: Text("Fernando Borges"),
             accountEmail: Text("Fernandolook1@outlook.com"),
-            currentAccountPicture: Icon(Icons.person_pin),
             ),
-            ListTile(title: Padding(padding: EdgeInsets.only(left: 20), child: Text("Perfil", style: TextStyle(fontSize: 20),)), onTap: (){}),
+            ListTile(title: Row(
+              children: <Widget>[
+              
+                Padding(padding: EdgeInsets.only(left: 20), child: Text("Perfil", style: TextStyle(fontSize: 20),)),
+              ],
+            ), onTap: (){}),
             ListTile(title: Padding(padding: EdgeInsets.only(left: 20), child: Text("Meus Anúncios", style: TextStyle(fontSize: 20),)), onTap: (){}),
             ListTile(title: Padding(padding: EdgeInsets.only(left: 20), child: Text("Perfil", style: TextStyle(fontSize: 20),)), onTap: (){})
           ],
