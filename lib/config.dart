@@ -1,5 +1,3 @@
-import 'package:flutter/cupertino.dart';
-
-class Config {
-
-} 
+void main(){
+  print(1);
+}

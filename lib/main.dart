@@ -1,4 +1,5 @@
 import 'package:amiguineos/TelaLogin.dart';
+import 'package:amiguineos/TelaCadastro.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        fontFamily: 'CreamPeach',
+        fontFamily: 'Roboto-Regular',
         primarySwatch: Colors.purple,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
@@ -34,6 +35,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
 
-    return TelaLogin();
+    return TelaCadastro();
   }
 }
