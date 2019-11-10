@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'AdInfo.dart';
 
 class Ad extends StatelessWidget {
   @override
@@ -19,7 +20,7 @@ class Ad extends StatelessWidget {
           ]
         ),
         width: MediaQuery.of(context).size.width,
-        height: 140,
+        height: 180,
         child: Padding(
           padding: const EdgeInsets.only(top: 20, left: 15, right: 15, bottom: 15),
           child: Column(
@@ -44,6 +45,17 @@ class Ad extends StatelessWidget {
                   Text("5 KM")
                 ],
               ),
+              Container(
+              width: 180,
+                child: Padding(
+                  padding: EdgeInsets.only(top: 10),
+                  child: RaisedButton(
+                  color: Colors.purple,
+                  child: Text("Infomações"),
+                  onPressed:() {},
+                  ),
+                ),
+              )
             
             ],
           ),

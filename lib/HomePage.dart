@@ -30,12 +30,40 @@ class _HomePageState extends State<HomePage> {
             ),
             ListTile(title: Row(
               children: <Widget>[
-              
-                Padding(padding: EdgeInsets.only(left: 20), child: Text("Perfil", style: TextStyle(fontSize: 20),)),
+                Icon(Icons.person_pin),
+                Padding(padding: EdgeInsets.only(left: 20), child: Text("Conta", style: TextStyle(fontSize: 20),)),
               ],
             ), onTap: (){}),
-            ListTile(title: Padding(padding: EdgeInsets.only(left: 20), child: Text("Meus Anúncios", style: TextStyle(fontSize: 20),)), onTap: (){}),
-            ListTile(title: Padding(padding: EdgeInsets.only(left: 20), child: Text("Perfil", style: TextStyle(fontSize: 20),)), onTap: (){})
+            ListTile(title: Row(
+              children: <Widget>[
+              Icon(Icons.attach_money),
+                Padding(padding: EdgeInsets.only(left: 20), child: Text("Adicionar Petiscos", style: TextStyle(fontSize: 20),)),
+              ],
+            ), onTap: (){}),
+            ListTile(title: Row(
+              children: <Widget>[
+                Icon(Icons.list),
+                Padding(padding: EdgeInsets.only(left: 20), child: Text("Meus Anúncios", style: TextStyle(fontSize: 20),)),
+              ],
+            ), onTap: (){}),
+            ListTile(title: Row(
+              children: <Widget>[
+              Icon(Icons.playlist_add),
+                Padding(padding: EdgeInsets.only(left: 20), child: Text("Inserir Anúncio", style: TextStyle(fontSize: 20),)),
+              ],
+            ), onTap: (){}),
+            ListTile(title: Row(
+              children: <Widget>[
+              Icon(Icons.info_outline),
+                Padding(padding: EdgeInsets.only(left: 20), child: Text("Termos de Uso", style: TextStyle(fontSize: 20),)),
+              ],
+            ), onTap: (){}),
+            ListTile(title: Row(
+              children: <Widget>[
+              Icon(Icons.info_outline),
+                Padding(padding: EdgeInsets.only(left: 20), child: Text("Sobre", style: TextStyle(fontSize: 20),)),
+              ],
+            ), onTap: (){}),
           ],
         ),
       ),

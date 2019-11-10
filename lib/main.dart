@@ -3,6 +3,7 @@ import 'package:amiguineos/TelaLogin.dart';
 import 'package:amiguineos/TelaCadastro.dart';
 import 'package:flutter/material.dart';
 import 'package:amiguineos/PageInitial.dart';
+import 'AdInfo.dart';
 
 void main() => runApp(MyApp());
 
@@ -41,7 +42,41 @@ class _MyHomePageState extends State<MyHomePage> {
     return 
     Scaffold(
       backgroundColor: Colors.black12,
+      body: SingleChildScrollView(child: PageInitial()) 
+    );
+  }
+}
+class TelaAd_Route extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       body: HomePage()
+    );
+  }
+}
+class TelaLogin_route extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: TelaLogin(),
+     
+    );
+  }
+}
+class TelaCadastro_route extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: TelaCadastro()
+    );
+  }
+}
+
+class AdInfo_route extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: AdInf(),
     );
   }
 }
