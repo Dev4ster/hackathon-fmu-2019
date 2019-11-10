@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return 
     Scaffold(
       backgroundColor: Colors.black12,
-      body: PageInitial()
+      body: HomePage()
     );
   }
 }

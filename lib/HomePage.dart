@@ -12,19 +12,28 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(icon: Icon(Icons.menu), onPressed: (){}, ),
+        title: Text("Amiguíneos Anúncio"),
         actions: <Widget>[
-            // action button
-            Icon(Icons.monetization_on),
-            Padding(
-              padding: const EdgeInsets.only(left: 8.0, right: 30),
-              child: Center(child: Text("18,00")),
-            ),
-            
-          ],
+          Icon(Icons.monetization_on),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0, right: 30),
+            child: Center(child: Text("18,00")),
+          ),
+        ],
         centerTitle: true,
-        
-        
+      ),
+      drawer: Drawer(child: ListView(
+          children: <Widget>[
+          UserAccountsDrawerHeader(
+            accountName: Text("Fernando Borges"),
+            accountEmail: Text("Fernandolook1@outlook.com"),
+            currentAccountPicture: Icon(Icons.person_pin),
+            ),
+            ListTile(title: Padding(padding: EdgeInsets.only(left: 20), child: Text("Perfil", style: TextStyle(fontSize: 20),)), onTap: (){}),
+            ListTile(title: Padding(padding: EdgeInsets.only(left: 20), child: Text("Meus Anúncios", style: TextStyle(fontSize: 20),)), onTap: (){}),
+            ListTile(title: Padding(padding: EdgeInsets.only(left: 20), child: Text("Perfil", style: TextStyle(fontSize: 20),)), onTap: (){})
+          ],
+        ),
       ),
       body: Padding(
         padding:
